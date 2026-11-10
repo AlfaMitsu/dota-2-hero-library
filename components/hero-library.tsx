@@ -8,6 +8,7 @@ import loreJson from "@/lib/lore.json";
 import slugsJson from "@/lib/slugs.json";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
+import Hero360Preview from "@/components/hero-360-preview";
 
 interface Hero { id:string; name:string; attribute:string; image:string }
 interface Profile {roles:string[];attack:string;specialty:string;description:string;playstyle:string}
@@ -76,28 +77,19 @@ function statNumbers(s:Stat,level:number){
  return {strength,agility,intelligence,health,mana,damageMin:s.base_attack_min+primary,damageMax:s.base_attack_max+primary,armor,speed};
 }
 function ProfileDialog({hero,onClose,onNext,onPrev,isFavorite,onFavorite,stats,constants}:{hero:Hero;onClose:()=>void;onNext:()=>void;onPrev:()=>void;isFavorite:boolean;onFavorite:()=>void;stats:Stat[];constants:Constants|null}){
- const [level,setLevel]=useState(1),[videoFailed,setVideoFailed]=useState(false),[tilt,setTilt]=useState({x:0,y:0});
- const [artFailed,setArtFailed]=useState(false);
- const dragging=useRef<{x:number;y:number}|null>(null);const modalRef=useRef<HTMLDivElement>(null);
+ const [level,setLevel]=useState(1);
+ const modalRef=useRef<HTMLDivElement>(null);
  const heroStats=getHeroStats(stats,hero);const p=profiles[hero.name];
  const n=heroStats?statNumbers(heroStats,level):null;
  const ids=abilityIds(constants,hero);
  const talents=constants?.hero_abilities[getKey(hero)]?.talents||[];
- useEffect(()=>{setLevel(1);setTilt({x:0,y:0});setVideoFailed(false);setArtFailed(false)},[hero.id]);
+ useEffect(()=>{setLevel(1)},[hero.id]);
  useEffect(()=>{const key=(e:KeyboardEvent)=>{if(e.key==="Escape")onClose();else if(e.key==="ArrowRight")onNext();else if(e.key==="ArrowLeft")onPrev()};document.addEventListener("keydown",key);return()=>document.removeEventListener("keydown",key)},[onClose,onNext,onPrev]);
  useEffect(()=>{const prev=document.body.style.overflow;document.body.style.overflow="hidden";return()=>{document.body.style.overflow=prev}},[]);
- const down=(e:React.PointerEvent)=>{dragging.current={x:e.clientX,y:e.clientY};(e.currentTarget as HTMLDivElement).setPointerCapture(e.pointerId)};
- const move=(e:React.PointerEvent)=>{if(!dragging.current)return;setTilt({x:clamp((dragging.current.y-e.clientY)/12,-18,18),y:clamp((e.clientX-dragging.current.x)/10,-24,24)})};
- const up=()=>{dragging.current=null;setTilt({x:0,y:0})};
  return <div className="modal-backdrop" onPointerDown={e=>{if(e.target===e.currentTarget)onClose()}} role="presentation">
   <div className="hero-dialog" ref={modalRef} role="dialog" aria-modal="true" aria-label={`${hero.name} hero details`}>
    <button className="close-dialog" onClick={onClose} title="Close hero details" aria-label="Close hero details"><X size={21}/></button>
-   <div className="hero-stage" onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}>
-    <div className="stage-tilt" style={{transform:`perspective(950px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`}}>
-      <img src={artFailed?portrait(hero):fullImage(hero)} onError={()=>setArtFailed(true)} alt={hero.name} className="stage-art" draggable={false}/>
-      {!videoFailed&&<HeroVideo hero={hero} className="stage-video" onError={()=>setVideoFailed(true)}/>}
-    </div><div className="drag-label">Drag to tilt preview</div>
-   </div>
+   <div className="hero-stage hero-stage-360"><Hero360Preview key={hero.id} heroSlug={slug(hero)} heroName={hero.name} fallbackSrc={fullImage(hero)}/></div>
    <div className="hero-details">
     <div className="attr-overline">{hero.attribute.toUpperCase()} HERO</div>
     <div className="profile-name-row"><h2>{hero.name}</h2><Button size="icon" variant="ghost" onClick={onFavorite} title={isFavorite?"Remove favorite":"Add favorite"}><Star size={21} className={isFavorite?"starred":""}/></Button></div>
