@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "source": "verified Vercel production deployment",
+  "deploymentId": "dpl_BTLZ6m9Yi8JwVyQpEMsk8Q9Wc3Dv",
+  "projectId": "prj_pdQDYxU5efK0v8zWkWXyAQaRBFNB",
+  "note": "Vercel file SHA references preserve full source bytes; do not replace with truncated file-content tool responses. This manifest is not a GitHub source checkout.",
+  "files": [
+    {
+      "file": "app/api/ability-videos/route.ts",
+      "sha": "8e0ca9a2449dff30be5659e3d179d802f81cfeeb"
+    },
+    {
+      "file": "app/api/hd-portrait/route.ts",
+      "sha": "365aa7743ff03041ed75aa33c6b096fd744da230"
+    },
+    {
+      "file": "app/api/hero-catalog/route.ts",
+      "sha": "ef8046b3f8d47cf44e97cc66d04f7e8d620f7fa6"
+    },
+    {
+      "file": "app/api/hero-stats/route.ts",
+      "sha": "60dfcb6cfc54aad49430f66d894131e3e2168125"
+    },
+    {
+      "file": "app/api/phase2/route.ts",
+      "sha": "36eef578281de6486bf272b7584b20aa1623c680"
+    },
+    {
+      "file": "app/api/phase3/route.ts",
+      "sha": "e2e9d7c86216fb679136e308f3f81335fad3a811"
+    },
+    {
+      "file": "app/api/phase4/card/route.ts",
+      "sha": "95994851ac20c7712c53acef678fb38b99a65574"
+    },
+    {
+      "file": "app/api/phase4/patches/route.ts",
+      "sha": "65de7519ba508653ff677f4a54cebbdecf33bc3d"
+    },
+    {
+      "file": "app/api/phase4/roster/route.ts",
+      "sha": "632689c4ee7c13a65a42ef74093d0b609677eca0"
+    },
+    {
+      "file": "app/api/phase4/voices/route.ts",
+      "sha": "434edec950d85e58e22076b541cb608dd459c40b"
+    },
+    {
+      "file": "app/api/phase7/item-popularity/route.ts",
+      "sha": "c0d775e5e23c44473b0b164bb46532027f8d6d49"
+    },
+    {
+      "file": "app/api/phase7/items/route.ts",
+      "sha": "04d67c9033e9fb0a3159cad98aff910f15873a43"
+    },
+    {
+      "file": "app/api/phase7/matchups/route.ts",
+      "sha": "3fe366053b17b5ddc1aba6c7096e78221924b6c8"
+    },
+    {
+      "file": "app/api/phase8/card/route.ts",
+      "sha": "84c66a27e2b199172eeab002cb93791340fc8c6a"
+    },
+    {
+      "file": "app/badge-cleanup.css",
+      "sha": "4c3148c2eb5112b872d0a7c8c25d55a544f8354c"
+    },
+    {
+      "file": "app/globals.css",
+      "sha": "e9c932b7e17fadaf2a7d31c7bff4f89053f8b7b1"
+    },
+    {
+      "file": "app/hero-stage/hero-stage.css",
+      "sha": "54a94542eca20aa09a9791b2a3f93562c5225409"
+    },
+    {
+      "file": "app/hero-stage/page.tsx",
+      "sha": "35f2c0c27b1b69e241caf2dd6adea9021c0c788b"
+    },
+    {
+      "file": "app/layout.tsx",
+      "sha": "17f9e57051e61c155265cc00efa16f6561186c50"
+    },
+    {
+      "file": "app/page.tsx",
+      "sha": "19eb8f8b4f55037ab2aae743db164a63638093ba"
+    },
+    {
+      "file": "components.json",
+      "sha": "bdfdc0e58dcf37bac56f47f9109b7bac70d5c9d0"
+    },
+    {
+      "file": "components/hero-360-preview.tsx",
+      "sha": "a0d0dae1e0047183616da99f38cbe5f8ec33ebc9"
+    },
+    {
+      "file": "components/hero-library.tsx",
+      "sha": "fefc6118b4db3f87e1caef962d0bc4a5584a0eca"
+    },
+    {
+      "file": "components/phase4-animation-studio.tsx",
+      "sha": "25f9db51c0fecbd8f1a43eb2160daadd2a2da6cc"
+    },
+    {
+      "file": "components/ui/button.tsx",
+      "sha": "8f81a1ccf0f33375889271337bea7d181c44fb8e"
+    },
+    {
+      "file": "components/ui/slider.tsx",
+      "sha": "3baa52b38bc7ae76f82c149d6701211e7a9410da"
+    },
+    {
+      "file": "lib/heroes.json",
+      "sha": "066f0610cc53b82e6dea5f68f58c60f3302448e5"
+    },
+    {
+      "file": "lib/lore.json",
+      "sha": "34b742e87ae7e3ae63ddf4bf9ff1109b840ce50a"
+    },
+    {
+      "file": "lib/profiles.json",
+      "sha": "f214552267ec6bce3c21e27252897fb82e8c6b0d"
+    },
+    {
+      "file": "lib/slugs.json",
+      "sha": "7551e5a29b07ce854ba42a1b87ce8c7f6676b206"
+    },
+    {
+      "file": "lib/utils.ts",
+      "sha": "82e5fc801930165e1061a86895eb6fe398beaffe"
+    },
+    {
+      "file": "next-env.d.ts",
+      "sha": "2cb600b486174654e684f490012a0ea2b2dbf2e1"
+    },
+    {
+      "file": "next.config.ts",
+      "sha": "7ae6f7207e10cf9dbb1c7c84cc309a21e0b316f3"
+    },
+    {
+      "file": "package.json",
+      "sha": "aa2ac019d7f5699a05c23317ef5fec717708755f"
+    },
+    {
+      "file": "postcss.config.mjs",
+      "sha": "abdc868df95c5e759afe30b8434959c1916dba95"
+    },
+    {
+      "file": "public/clean-hero-portraits.js",
+      "sha": "357dee3f001e8c2f0c48058c06dc47a10f730acd"
+    },
+    {
+      "file": "public/clean-portraits/agility-01.webp",
+      "sha": "b9d944d39ec6bfec707d19b4676a31279c23bc17"
+    },
+    {
+      "file": "public/clean-portraits/agility-02.webp",
+      "sha": "7549d435be07e08efecde0a688cc96230651b910"
+    },
+    {
+      "file": "public/clean-portraits/agility-06.webp",
+      "sha": "474ac35156d145ef61e603c48c75e214ad9c3118"
+    },
+    {
+      "file": "public/clean-portraits/agility-14.webp",
+      "sha": "cb443a431f376f6d2fc61fcae0d91b00d15dd52b"
+    },
+    {
+      "file": "public/clean-portraits/agility-15.webp",
+      "sha": "e77dd5c6e326b93d9de0a45aeb628af0551a554b"
+    },
+    {
+      "file": "public/clean-portraits/agility-24.webp",
+      "sha": "91e632bcc19ebe7e5f365d2f7cddfa93e4619c59"
+    },
+    {
+      "file": "public/clean-portraits/agility-26.webp",
+      "sha": "1010b50718a6ebc4d81cbba1f0574b38aed5eace"
+    },
+    {
+      "file": "public/clean-portraits/agility-27.webp",
+      "sha": "9ca1d795d8d28081143574cc78664d9b4bb9113b"
+    },
+    {
+      "file": "public/clean-portraits/agility-33.webp",
+      "sha": "fc93b9671da8058bc1d93f3d1d1bb6085ac77acc"
+    },
+    {
+      "file": "public/clean-portraits/agility-34.webp",
+      "sha": "cdeacd8e4d5d1480d89033660b5b6469926eab0c"
+    },
+    {
+      "file": "public/clean-portraits/agility-35.webp",
+      "sha": "ddae4ee2f33dfff3d3adfb7ba3a93a560d9669a0"
+    },
+    {
+      "file": "public/clean-portraits/dawnbreaker.webp",
+      "sha": "462848f31689bb1a7eb643655216ca3c2f5adbfb"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-06.webp",
+      "sha": "9a50d2e9b978e0d50103ae94c74c1f1c97421b4f"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-13.webp",
+      "sha": "b155b896cdbfbee08e3945b632ca771db90e3d61"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-15.webp",
+      "sha": "38a84c795d2469ab3078a10f435f200f05d8a9f7"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-22.webp",
+      "sha": "26cde7fa990770524e806d75889d2d9d070adaee"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-27.webp",
+      "sha": "b022a66d79615296e0293d4e378c16bda8d0b987"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-31.webp",
+      "sha": "bef906044637c51e005081a7bfc3152e6ef49996"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-33.webp",
+      "sha": "eb1d0349550d8089f8a922d5960e869aed85aca8"
+    },
+    {
+      "file": "public/clean-portraits/intelligence-34.webp",
+      "sha": "b7bba9f3a1f9c4262622cf83c676e41a6a1c8972"
+    },
+    {
+      "file": "public/clean-portraits/primal-beast.webp",
+      "sha": "65805a7b23be38e69a46adb227ba12b0ab59bd31"
+    },
+    {
+      "file": "public/clean-portraits/strength-01.webp",
+      "sha": "65a27ce5e6ef2315601c2c65dbc9968e7e765246"
+    },
+    {
+      "file": "public/clean-portraits/strength-02.webp",
+      "sha": "ec4372f808624008a616b5e3256e6a307efb33ce"
+    },
+    {
+      "file": "public/clean-portraits/strength-03.webp",
+      "sha": "c32c1772dba79b1dc324f6b95badb1c1dceb8058"
+    },
+    {
+      "file": "public/clean-portraits/strength-20.webp",
+      "sha": "c41463f74ab68d39e6720a61b8927025dbb2cc26"
+    },
+    {
+      "file": "public/clean-portraits/strength-21.webp",
+      "sha": "ef3fc7f12397ad8effbcc532b01acf3287786ad1"
+    },
+    {
+      "file": "public/clean-portraits/strength-26.webp",
+      "sha": "a7df3d74ca8d6928d5b7324195b385f7c6e3d4a3"
+    },
+    {
+      "file": "public/clean-portraits/strength-28.webp",
+      "sha": "ca02acc693e026934af2a91ad0c8090aec95ded9"
+    },
+    {
+      "file": "public/clean-portraits/strength-36.webp",
+      "sha": "6b6707b26e56be62134b625967209d06bf54fb3a"
+    },
+    {
+      "file": "public/clean-portraits/universal-08.webp",
+      "sha": "7535c886ca22706dca2cf081b5da3ae8f500d08f"
+    },
+    {
+      "file": "public/clean-portraits/universal-16.webp",
+      "sha": "2693fa2061bccc6d8cc0d0814a706ff6207b8944"
+    },
+    {
+      "file": "public/dota-logo.svg",
+      "sha": "6af2ad8025b4e3f927f68d06f61a02a918815313"
+    },
+    {
+      "file": "public/hero360.css",
+      "sha": "6b3d23bf7f8bd5778206671ef3feb7bd570c2c20"
+    },
+    {
+      "file": "public/phase1-reconcile.js",
+      "sha": "efa963e36703b93589ad42c3dfcb737b957a0693"
+    },
+    {
+      "file": "public/phase1.css",
+      "sha": "a85e5473dfa9851822630a566b1b7eecdd69d2bf"
+    },
+    {
+      "file": "public/phase1.js",
+      "sha": "73c99320522a4cf95937c540ca61c2d722532291"
+    },
+    {
+      "file": "public/phase10.css",
+      "sha": "7ea42d0b2dcee56b019fbe913a1cdadab5e3eeb8"
+    },
+    {
+      "file": "public/phase10.js",
+      "sha": "b4b42d681b706be5c12d715677dee37885d595d9"
+    },
+    {
+      "file": "public/phase11.css",
+      "sha": "f901068619793120b263e9588b0cd58b1d245231"
+    },
+    {
+      "file": "public/phase11.js",
+      "sha": "1f304b283e0a266996d043f9d7065382c89afd03"
+    },
+    {
+      "file": "public/phase2-quality.js",
+      "sha": "3bbd856480c085d72ceb1a282c2ccb2d3b83039c"
+    },
+    {
+      "file": "public/phase2.css",
+      "sha": "44fe86be13c9de1e0c31599d96b82754454f0500"
+    },
+    {
+      "file": "public/phase2.js",
+      "sha": "d7f9ffc8a543609771eb0a93ba5cc0a728616966"
+    },
+    {
+      "file": "public/phase3.css",
+      "sha": "9adc331b48176946d46d6fa5a57abdea7e269824"
+    },
+    {
+      "file": "public/phase3.js",
+      "sha": "c60034cc2da5c5c09ab589a6b360b5bf9f65cc99"
+    },
+    {
+      "file": "public/phase4.css",
+      "sha": "9ac833902956d6c798ae0126bc12f70ffa8200ee"
+    },
+    {
+      "file": "public/phase4.js",
+      "sha": "08ef012f0dd784983cf7243e596e7d5dd5602b8b"
+    },
+    {
+      "file": "public/phase5.css",
+      "sha": "48804e5852c4129a253d5b5d37003b312efb4328"
+    },
+    {
+      "file": "public/phase5.js",
+      "sha": "5172e6f197274d2e389486e7138d682b8911cb91"
+    },
+    {
+      "file": "public/phase6.css",
+      "sha": "dd7eb244da783fe0dd22e12386c0e25524dbd508"
+    },
+    {
+      "file": "public/phase7.css",
+      "sha": "52490a3c9bc10a8195119c26e955d2c226c045e0"
+    },
+    {
+      "file": "public/phase7.js",
+      "sha": "129f0a7ba22bfe49d4db1c9ecfe1858ee21c85bb"
+    },
+    {
+      "file": "public/phase8.css",
+      "sha": "cd27cb864b75d1688016bca38e30536fb284ab70"
+    },
+    {
+      "file": "public/phase8.js",
+      "sha": "523ff30f5597156dfaadee3c0be567ae3fd2a4e7"
+    },
+    {
+      "file": "public/phase9.css",
+      "sha": "453eb5d7dd98dd22f713465e233ecd9d07982017"
+    },
+    {
+      "file": "public/phase9.js",
+      "sha": "652e2fbba23e6ed4983c542fe3531e8d496874cd"
+    },
+    {
+      "file": "public/qa-fixes.css",
+      "sha": "b406aa7a53126a96c155a73e869c3569b66f76c8"
+    },
+    {
+      "file": "public/qa-fixes.js",
+      "sha": "13ae54c36c20554e50b48f4366d66f32f46782d0"
+    },
+    {
+      "file": "scripts/phase6-check.cjs",
+      "sha": "11ef53c67140e151a483067fd82d0703f4dac23b"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha": "69db4d2b331cdc74ff0bde8270f0ade46bb38f7a"
+    }
+  ]
+}
