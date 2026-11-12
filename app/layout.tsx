@@ -14,8 +14,9 @@ import "../public/phase10.css";
 import "../public/phase11.css";
 import "../public/phase12.css";
 import "../public/phase13.css";
+import "../public/phase14.css";
 import type {Metadata} from "next";
 import Script from "next/script";
 export const metadata:Metadata={title:"Dota 2 Hero Library",description:"Explore Dota 2 heroes, builds, drafts, lore, interactive 360 degree models and patch history."};
-const scripts=["clean-hero-portraits","phase1","phase1-reconcile","phase2","phase2-quality","phase3","phase4","qa-fixes","phase5","phase7","phase8","phase9","phase10","phase11","phase12","phase13"];
+const scripts=["clean-hero-portraits","phase1","phase1-reconcile","phase2","phase2-quality","phase3","phase4","qa-fixes","phase5","phase7","phase8","phase9","phase10","phase11","phase12","phase13","phase14"];
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}{scripts.map(id=><Script key={id} src={"/"+id+".js"} strategy="lazyOnload"/>)}</body></html>;}
