@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+/** Production smoke test. Run: node scripts/production-smoke.cjs https://dota-2-hero-library.vercel.app */
+const assert=require('node:assert/strict');
+const origin=process.argv[2]||process.env.SMOKE_BASE_URL;
+if(!origin||!/^https:\/\//.test(origin)){console.error('Provide an HTTPS deployment URL');process.exit(2)}
+const base=new URL(origin);
+const routes=['/','/phase12.js','/phase13.js','/phase14.js','/hero360.css','/api/phase13/meta'];
+async function run(){const failures=[];for(const path of routes){try{const response=await fetch(new URL(path,base),{signal:AbortSignal.timeout(15000),redirect:'follow'});const body=await response.text();if(!response.ok)throw Error('HTTP '+response.status);if(/vercel authentication|log in to vercel|deployment protection/i.test(body.slice(0,500)))throw Error('Deployment protection login returned');if(path==='/'){for(const asset of ['phase12','phase13','phase14'])assert(body.includes(asset),'Missing '+asset+' integration')}if(path==='/api/phase13/meta'){const json=JSON.parse(body);assert(Array.isArray(json.heroes)&&json.heroes.length===127,'Hero roster expected 127; got '+json.heroes?.length);assert(Array.isArray(json.patches),'Missing patches')}if(path.endsWith('.js'))assert(body.length>500,'Suspiciously short script');console.log('PASS',path,response.status,body.length)}catch(e){failures.push(path+': '+e.message);console.error('FAIL',path,e.message)}}if(failures.length){console.error(failures.length+' smoke checks failed');process.exitCode=1}else console.log('All '+routes.length+' smoke checks passed. Browser rotation and touch tests must be run separately.')}run().catch(e=>{console.error(e);process.exitCode=1});
