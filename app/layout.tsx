@@ -23,8 +23,9 @@ import "../public/phase19.css";
 import "../public/phase20.css";
 import "../public/phase21.css";
 import "../public/phase22.css";
+import "../public/patch742.css";
 import type {Metadata} from "next";
 import Script from "next/script";
 export const metadata:Metadata={title:"Dota 2 Hero Library",description:"Explore Dota 2 heroes, builds, drafts, lore, interactive 360 degree models and patch history."};
-const scripts=["clean-hero-portraits","phase1","phase1-reconcile","phase2","phase2-quality","phase3","phase4","qa-fixes","phase5","phase7","phase8","phase9","phase10","phase11","phase12","phase13","phase14","phase15","phase16","phase17","phase18","phase19","phase20","phase21","phase22"];
+const scripts=["clean-hero-portraits","phase1","phase1-reconcile","phase2","phase2-quality","phase3","phase4","qa-fixes","phase5","phase7","phase8","phase9","phase10","phase11","phase12","phase13","phase14","phase15","phase16","phase17","phase18","phase19","phase20","phase21","phase22","patch742"];
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}{scripts.map(id=><Script key={id} src={"/"+id+".js"} strategy="lazyOnload"/>)}</body></html>;}
